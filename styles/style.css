@@ -31,6 +31,10 @@ html {
     cursor: pointer;
 }
 
+.logo:hover {
+    color: teal;
+}
+
 #nav-links {
     display: flex;
     align-items: center;
@@ -51,7 +55,7 @@ html {
 
 body {
     background-color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 div {
@@ -162,6 +166,30 @@ h1 {
     flex-wrap: wrap;
     gap: 3rem;
     list-style: none;
+}
+
+.blob {
+    background-image: url(images/dayne-02.png);
+    filter: grayscale(100%);
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 26, 0.1);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+/* About Section */
+
+@keyframes animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
 }
 
 @media (max-width: 900px) {
