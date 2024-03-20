@@ -53,6 +53,10 @@ html {
     color: teal;
 }
 
+nav ul li a.active {
+    color: teal;
+}
+
 body {
     background-color: #fff;
     font-family: "Raleway", sans-serif;
@@ -60,6 +64,10 @@ body {
 
 div {
     display: block;
+}
+
+.teal {
+    color: teal;
 }
 
 .container {
@@ -74,6 +82,7 @@ div {
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    padding-bottom: 5rem;
 }
 
 h1 {
@@ -87,7 +96,7 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 80rem;
+    height: 60rem;
 }
 
 .hero-text h1 {
@@ -171,8 +180,8 @@ h1 {
 .blob {
     background-image: url(images/dayne-02.png);
     filter: grayscale(100%);
-    width: 380px;
-    height: 380px;
+    max-width: 380px;
+    max-height: 380px;
     background-size: cover;
     background-position: center center;
     margin: 20px;
@@ -183,6 +192,47 @@ h1 {
 
 /* About Section */
 
+#about {
+    background-color: #222623;
+    color: #fff;
+    min-height: 42rem;
+}
+
+.about__content {
+    padding-top: 2.5rem;
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+
+.about-title {
+    font-size: 4rem;
+    display: block; 
+    font-weight: normal;
+}
+
+.about-subtitle {
+    font-size: 3.5rem;
+    display: block;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    color: teal;
+}
+
+.about__text {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.about-img {
+    max-width: 40%;
+    border-radius: 10%;
+    border: 2px solid teal;
+}
+
 @keyframes animate {
     0%, 100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -192,7 +242,7 @@ h1 {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1058px) {
 .hero-main {
     flex-direction: column;
     gap: 3rem;
@@ -210,5 +260,17 @@ h1 {
 .skill-images {
     justify-content: center;
     gap: 10px;
+}
+
+.about-img {
+    display: none;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-text {
+    width: 75%;
 }
 }
