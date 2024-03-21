@@ -29,6 +29,8 @@ html {
 .logo {
     color: #2d2e32;
     cursor: pointer;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
 }
 
 .logo:hover {
@@ -44,7 +46,7 @@ html {
 
 .nav-link {
     color: #2d2e32;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     transition: all .23s;
 }
@@ -55,19 +57,23 @@ html {
 
 nav ul li a.active {
     color: teal;
+    font-weight: bold;
 }
+
 
 body {
     background-color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 div {
     display: block;
-}
-
-.teal {
-    color: teal;
 }
 
 .container {
@@ -83,10 +89,6 @@ div {
     position: relative;
     min-height: 100vh;
     padding-bottom: 5rem;
-}
-
-h1 {
-    font-weight: bold;
 }
 
 .content {
@@ -109,7 +111,6 @@ h1 {
 
 .hero-text p {
     color: #555;
-    font-family: Mulish, sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.6;
@@ -232,6 +233,73 @@ h1 {
     border-radius: 10%;
     border: 2px solid teal;
 }
+
+#projects {
+    padding: 3rem;
+}
+/* Portfolio cards */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    align-items: stretch;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    min-width: 400px;
+    transition: transform 0.3s ease;
+    padding: 2rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .card-content p {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .btn {
+    display: block;
+    background-color: teal;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #222623;
+  }
 
 @keyframes animate {
     0%, 100% {
